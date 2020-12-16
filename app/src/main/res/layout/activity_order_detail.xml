@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".OrderDetailActivity">
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/arrow_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/order_user_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rajesh Sharma"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/time_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20:45"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Id :"
+            android:textSize="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="190453"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="85dp" />
+
+        <TextView
+            android:id="@+id/item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 item"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 243"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_gravity="end"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_user_detail"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="4dp"
+        android:background="@drawable/order_list_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/item_exp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

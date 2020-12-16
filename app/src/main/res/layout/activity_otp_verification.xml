@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpVerification">
+
+    <TextView
+        android:id="@+id/lbl_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="14dp"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:textColor="#222222" />
+
+    <LinearLayout
+        android:id="@+id/otp_edit_txt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/lbl_text"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/otptext1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/otptext2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/otptext3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/otptext4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/otptext5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/otptext6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:background="@drawable/otp_txt_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_edit_txt"
+        android:onClick="movetologin"
+        android:text="Submit"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:textAllCaps="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/buttonbg"/>
+
+    <Button
+        android:id="@+id/resend"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/submit_verify"
+        android:layout_marginTop="20dp"
+        android:text="Can't get the otp resend it !"
+        android:textColor="#272626"
+        android:textAllCaps="false"
+        android:textSize="14dp"
+        android:background="@null" />
+
+</RelativeLayout>
